@@ -2,12 +2,6 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-
-<a href="~/lib/bootstrap/dist/css/bootstrap.css.map">~/lib/bootstrap/dist/css/bootstrap.css.map</a>
-<a href="~/lib/bootstrap/dist/css/bootstrap.min.css.map">~/lib/bootstrap/dist/css/bootstrap.min.css.map</a>
-<a href="~/lib/bootstrap/dist/css/bootstrap.rtl.css.map">~/lib/bootstrap/dist/css/bootstrap.rtl.css.map</a>
-<a href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">~/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map</a>
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
 <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
@@ -26,7 +20,7 @@
                     <img class="w-50" src="@item.hinhSach"/><br/>
                     <a>@item.tenSach</a><br/>
                     <a class="text-danger">@item.dongiaSach</a><br /><br />
-                    <button class="bg-danger text-light border-1 p-1"><h2>Shop now</h2></button>
+                    <button type="button" class="btn-link"><a href="/Home/ChiTiet/@item.id">Shop now</a></button>
                     
 
             </div>

@@ -1,0 +1,22 @@
+﻿
+
+@{
+    ViewData["Title"] = "ChiTiet";
+}
+@using Tuan3_HoangTheAnh.Models;
+@model  modelSach
+<link href="d:\ca nhan\hoctap\hufi\.net_term3\tuan3_hoangtheanh\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" />
+<link href="d:\ca nhan\hoctap\hufi\.net_term3\tuan3_hoangtheanh\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="d:\ca nhan\hoctap\hufi\.net_term3\tuan3_hoangtheanh\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" rel="stylesheet" />
+<link href="d:\ca nhan\hoctap\hufi\.net_term3\tuan3_hoangtheanh\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <div class="row p-3 border border-dark" style="border-style:dotted">
+        <div class="col-4">
+            <img width="200" height="200" src="@Model.hinhSach"/>
+        </div>
+        <div class="col-8">
+            <p>Ten sach: @Model.tenSach</p> <br />
+            <b>Gia: @Model.dongiaSach <u>đ</u></b>
+        </div>
+    </div>
+</div>
