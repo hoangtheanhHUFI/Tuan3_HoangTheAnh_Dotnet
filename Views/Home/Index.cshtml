@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<a href="~/lib/bootstrap/dist/css/bootstrap.css.map">~/lib/bootstrap/dist/css/bootstrap.css.map</a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.min.css.map">~/lib/bootstrap/dist/css/bootstrap.min.css.map</a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.rtl.css.map">~/lib/bootstrap/dist/css/bootstrap.rtl.css.map</a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">~/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map</a>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+@using Tuan3_HoangTheAnh.Models;
+@model List<modelSach>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in @Model)
+        {
+            <div class="col-3 text-center p-2">
+                <div class="w-75 border border-danger p-2">
+                    <img class="w-50" src="@item.hinhSach"/><br/>
+                    <a>@item.tenSach</a><br/>
+                    <a class="text-danger">@item.dongiaSach</a><br /><br />
+                    <button class="bg-danger text-light border-1 p-1"><h2>Shop now</h2></button>
+                    
+
+            </div>
+
+            </div>
+        }
+    </div>
+</div>
